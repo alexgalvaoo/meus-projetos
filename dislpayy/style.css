@@ -1,0 +1,34 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    margin: 32px;
+    margin-bottom: 32px;
+}
+
+li {
+    background-color: #000000;
+    color: white;
+    border: 4px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 32px;
+    padding: 32px;
+    height: 250px;
+    width: 400px;
+}
+
+.selected { 
+    background-color: #3a3a3a;
+    border: 4px solid rgb(7, 129, 156);
+
+}
+
+.hidden {
+    display: none;
+
+}
