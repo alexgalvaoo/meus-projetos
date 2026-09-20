@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
     font-family: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -111,7 +112,7 @@ a {
     height: 16rem;
     width: 16rem;
     object-fit: cover; 
-    transform: rotate(-2deg); /* deg = degrees */
+    transform: rotate(-2deg);
 }
 
 .gallery__img-wrapper {
@@ -125,11 +126,6 @@ a {
 }
 
 .gallery__img-wrapper:nth-child(even) > .gallery__img {
-    /* 
-       ATENÇÃO: Essa propriedade não foi colocada durante a aula por falta de atenção minha,
-       ela é necessária para que a propriedade "top: 1rem;" abaixo tenha efeito.
-       Desculpe-me pela falta de atenção ^^" 
-    */
     position: relative;
     top: 1rem;
     transform: rotate(2deg);
@@ -155,4 +151,167 @@ footer {
     margin-top: 4rem;
     padding: 2rem;
     text-align: center;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE - TABLETS E CELULARES
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero__background {
+        height: 70vh;
+    }
+
+    .hero__foreground {
+        padding: 30vh 1.5rem 0;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__text {
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+        margin-top: 1.5rem;
+    }
+
+
+    /* SEÇÕES */
+
+    .section {
+        padding: 0 1.5rem;
+    }
+
+    .section__title {
+        font-size: 2rem;
+        margin: 3rem auto 2rem;
+    }
+
+
+    /* IMAGENS */
+
+    .section__img,
+    .section__img-inline {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* IMAGEM QUE FICAVA AO LADO DO TEXTO */
+
+    .section__img-inline {
+        float: none;
+        display: block;
+        margin: 0 auto 2rem;
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+    }
+
+    .section__text-inline {
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+
+    /* TEXTOS */
+
+    .section__text,
+    .section__text-inline {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 2rem auto;
+    }
+
+
+    /* GALERIA */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: auto;
+        max-width: 10rem;
+        aspect-ratio: 1;
+    }
+
+    .gallery__img-wrapper + .gallery__img-wrapper {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+}
+
+
+/* ========================================
+   CELULARES PEQUENOS
+   ======================================== */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero__background {
+        height: 60vh;
+    }
+
+    .hero__foreground {
+        padding: 25vh 1rem 0;
+    }
+
+    .hero__title {
+        font-size: 2.2rem;
+    }
+
+    .hero__text {
+        font-size: 0.75rem;
+        letter-spacing: 0.1rem;
+    }
+
+
+    /* SEÇÕES */
+
+    .section {
+        padding: 0 1rem;
+    }
+
+    .section__title {
+        font-size: 1.7rem;
+    }
+
+
+    /* GALERIA */
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__img {
+        max-width: 14rem;
+    }
 }
