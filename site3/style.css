@@ -21,7 +21,6 @@ header a {
   color: white;
 }
 
-
 /* =========================
    BANNER PRINCIPAL
 ========================= */
@@ -71,7 +70,6 @@ header a {
   height: 100%;
   object-fit: cover;
 }
-
 
 /* =========================
    CARDÁPIO
@@ -125,7 +123,6 @@ header a {
   padding-bottom: 8px;
 }
 
-
 /* =========================
    SOBRE NÓS
 ========================= */
@@ -170,7 +167,6 @@ header a {
   padding: 0 20px;
 }
 
-
 /* =========================
    CONTATO
 ========================= */
@@ -203,7 +199,6 @@ header a {
   display: inline-block;
 }
 
-
 /* =========================
    FOOTER
 ========================= */
@@ -216,13 +211,11 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /* ==================================================
    TABLET
 ================================================== */
 
 @media (max-width: 900px) {
-
   .banner__principal {
     height: 600px;
   }
@@ -242,16 +235,13 @@ footer {
   .menu__cardapio ul {
     grid-template-columns: repeat(2, minmax(280px, 1fr));
   }
-
 }
-
 
 /* ==================================================
    CELULAR
 ================================================== */
 
 @media (max-width: 600px) {
-
   header {
     padding: 20px;
   }
@@ -259,7 +249,6 @@ footer {
   header div {
     gap: 1.5rem;
   }
-
 
   /* BANNER */
 
@@ -284,7 +273,6 @@ footer {
   .texto__principal a {
     padding: 11px 22px;
   }
-
 
   /* CARDÁPIO */
 
@@ -316,7 +304,6 @@ footer {
     padding: 20px;
   }
 
-
   /* SOBRE NÓS */
 
   .sobre__nos {
@@ -333,7 +320,6 @@ footer {
     font-size: 17px;
     padding: 0 20px;
   }
-
 
   /* CONTATO */
 
@@ -353,7 +339,6 @@ footer {
   .contato a {
     padding: 11px 22px;
   }
-
 
   /* FOOTER */
 
