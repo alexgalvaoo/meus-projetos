@@ -91,12 +91,12 @@ header a {
   display: grid;
 
   /* As colunas agora se adaptam à tela */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 470px));
+
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 2rem;
-  justify-content: center;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 20px;
   list-style: none;
@@ -105,7 +105,6 @@ header a {
 .menu__cardapio img {
   width: 100%;
   display: block;
-  margin: 0 auto;
   height: 300px;
   object-fit: cover;
 }
@@ -113,7 +112,6 @@ header a {
 .menu__cardapio li {
   min-width: 0;
   width: 100%;
-  max-width: 470px;
 }
 
 .menu__cardapio li div {
@@ -223,7 +221,7 @@ footer {
    TABLET
 ================================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
   .banner__principal {
     height: 600px;
@@ -242,7 +240,7 @@ footer {
   }
 
   .menu__cardapio ul {
-    grid-template-columns: repeat(2, minmax(280px, 470px));
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
   }
 
 }
